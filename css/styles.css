@@ -1,0 +1,212 @@
+/****************************************
+GENERAL STYLES
+*****************************************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 75vh;
+    padding: 0 28px 0 27px;
+}
+/****************************************
+MAIN STYLES
+*****************************************/
+.logo {
+    margin: 81px 0 2rem;
+}
+
+.logo-img {
+    width: 56px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.title {
+    color: #15202A;
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.455;
+}
+
+.faint-title {
+    color: #969696;
+    font-weight: 300;
+}
+
+.subtitle {
+    color: #15202A;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 72px;
+    position: relative;
+}
+
+.userEmail {
+    margin-bottom: 10px;
+    color: #B8C7ED;
+    border: 1px solid #C2D3FF;
+    border-radius: 28px;
+    outline: none;
+    line-height: 1.667;
+    padding: 10px 0 10px 32px;
+    height: 40px;
+    width: 281px;
+}
+
+.userEmail::-webkit-input-placeholder {
+    color: #B8C7ED;
+}
+
+.btn {
+    color: #FFF;
+    background-color: #4C7BF3;
+    border-style: none;
+    border-radius: 28px;
+    box-shadow: 0 10px 5px 2px rgba(76, 123, 243, 0.23);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.333;
+    width: 282px;
+    height: 40px;
+}
+
+.hero-img {
+    margin-bottom: 120px;
+}
+
+.social-links {
+    margin-bottom: 27px;
+}
+.icons {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #4C7BF3;
+    width: 31px;
+    height: 31px;
+    border: 0.92px solid rgba(76, 123, 243, 0.15);
+    border-radius: 50%;
+    margin: 0 12.49px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.copyright p {
+    color: #969696;
+    font-size: 10px;
+    font-weight: 300;
+    margin-bottom: 37px;
+}
+
+.error-msg {
+    display: none;
+    color: #FF5466;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 2;
+    margin: 2px 0 20px;
+}
+/****************************************
+FOOTER STYLES
+*****************************************/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+/****************************************
+MEDIA QUERIES
+*****************************************/
+@media (min-width: 700px) {
+    .content-wrapper {
+        max-width: 640px;
+    }
+
+    .logo-img {
+        width: 90px;
+        height: auto;
+    }
+
+    .title {
+        font-size: 3rem;
+        line-height: 1.25;
+    }
+
+    .subtitle {
+        font-size: 1.25rem;
+    }
+
+    .form {
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        height: 100px;
+    }
+
+    .userEmail {
+        width: 421px;
+        height: 56px;
+        margin-bottom: 0;
+    }
+
+    .btn {
+        width: 200px;
+        height: 56px;
+        margin-left: 1rem;
+    }
+
+    .error-msg {
+        position: absolute;
+        bottom: 0;
+        left: 33px;
+        margin: 0%;
+    }
+
+    .copyright p {
+        font-size: .7rem;
+    }
+}
